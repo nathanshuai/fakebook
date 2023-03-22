@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title> Fakebook </title>
+        <link rel=" shortcut icon" href="./assets/image/Favorite icon.png?v=2" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Lora&family=Nunito+Sans:wght@400;600;700&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+        <link rel="stylesheet" href="./assets/style/index.css" media="all">
+        <script src="assets/script/index.js" defer></script>   
+    </head>
+    <body>
+        <header> 
+            <div class="container">
+                <div class="title">
+                    <h1>Fakebook</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Friends</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Groups</a></li>
+                        <li><a href="#">My ads</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul>
+                </nav>
+                <div class="icon">
+                    <img class="img" src="./assets/image/My image.png" alt="image"></img>                   
+                </div>   
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="center">
+                    <div>
+                        <form>
+                            <textarea id="myTextarea" rows="5" placeholder="What's new, NathanShuai?"></textarea>
+                            <div class="bottom-line">
+                                <label for="image" class="file-upload"><i class="fa-solid fa-image"></i><span></span></label>
+                                <input type="file" id="image" name="image" onchange="displayFileName()">
+                                <p id="file-name"></p>
+                                <button type="button" id="post-button" onclick="addPost()">Post</button>
+                            </div>
+                        </form>
+                        <div id="modal-container">
+                            <div id="modal-content">
+                              <h3>Account Info</h3>
+                              <p id="id"></p>
+                              <p id="username"></p>
+                              <p id="email"></p>
+                              <p id="groups"></p>
+                              <p id="can Monetize"></p>
+                            </div>
+                        </div> 
+                    </div>
+                    <section>
+                        <div class="post-list">
+                            <ul id="posts"></ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
